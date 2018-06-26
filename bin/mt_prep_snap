@@ -1,9 +1,9 @@
 #!/bin/csh -f
 
-# Interface between Gamma and MAINSAR
+# Interface between SNAP/Gamma and MAINSAR
 #
 # Andy Hooper, December 2012
-#
+# Modified: José Manuel Delgado Blasco, January 2018
 # ===========================================================================
 # Expected directory structure:
 # PS:
@@ -232,7 +232,7 @@ else
   mt_extract_cands 1 0 1 1 f 1 $maskfile
   type pt2geo >& /dev/null
   if ( $status == 0 ) then
-   set dempar = `\ls $datadir/dem/*_seg.par`
+   set dempar = `\ls $datadir/dem/*.par`
    set diffpar = `\ls $datadir/geo/*.diff_par`
    echo $dempar
    echo $diffpar
