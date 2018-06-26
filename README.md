@@ -10,7 +10,8 @@ This provided package evolved from inital bash script routines used for the publ
 
 
 
-Author: Jose Manuel Delgado Blasco(1), Michael Foumelis(2)
+Author: Jose Manuel Delgado Blasco(1,2), Michael Foumelis(3)
 Organizations: 
      1. Microgeodesia Jaen Research Group, University of Jaen (Spain) / Grupo de Investigación Microgeodesia Jaen, Universidad de Jaen
-     2. BRGM - French Geological Survey
+     2. Progressive Systems srl, Italy
+     3. BRGM - French Geological Survey
