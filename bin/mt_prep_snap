@@ -126,7 +126,7 @@ echo " "
 set length   = `gawk '/azimuth_lines/ {print $2}'     < $RSC`
 set width    = `gawk '/range_samples/ {print $2}'     < $RSC`
 
-echo "gamma" > processor.txt
+echo "snap" > processor.txt
 if ($SB_FLAG == 1) then
     matlab -nojvm -nosplash -nodisplay < $STAMPS/matlab/sb_parms_initial.m > sb_parms_initial.log
 else
