@@ -90,6 +90,7 @@ for dimfile in glob.iglob(coregfolder + '/*'+IW+'.dim'):
 	with open(graph2run, 'w') as file:
            file.write(filedata)
         args = [ GPT, graph2run, '-c', CACHE, '-q', CPU]
+	print args
 	# Launching process
         process = subprocess.Popen(args, stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 	timeStarted = time.time()
