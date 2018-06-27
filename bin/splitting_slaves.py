@@ -53,11 +53,13 @@ finally:
 slavefolder=PROJECT+'/slaves'
 splitfolder=PROJECT+'/split'
 logfolder=PROJECT+'/logs'
-
+graphfolder=PROJECT+'/graphs'
 if not os.path.exists(splitfolder):
                 os.makedirs(splitfolder)
 if not os.path.exists(logfolder):
                 os.makedirs(logfolder)
+if not os.path.exists(graphfolder):
+                os.makedirs(graphfolder)
 
 graph2run=PROJECT+'/graphs/splitgraph2run.xml'
 outlog=logfolder+'/split_proc_stdout.log'
@@ -81,8 +83,11 @@ for acdatefolder in sorted(os.listdir(slavefolder)):
     files = glob.glob(os.path.join(slavefolder, acdatefolder) + '/*.zip')
     print files
     out_file.write(str(files)+'\n')
-    head, tail = os.path.split(os.path.join(slavesplittedfolder, files))
-    outputname=tail[17:8]+'_'+IW+'.dim'
+    head, tail = os.path.split(os.path.join(str(files)))
+    splitslavefolder=splitfolder+'/'+tail[17:25]
+    if not os.path.exists(splitslavefolder):
+                os.makedirs(splitslavefolder)
+    outputname=tail[17:25]+'_'+IW+'.dim'
     if len(files) == 1 :
 	graphxml=GRAPH+'/slave_split_applyorbit.xml'
        # Read in the file
@@ -92,7 +97,7 @@ for acdatefolder in sorted(os.listdir(slavefolder)):
         # Replace the target string
         filedata = filedata.replace('INPUTFILE', files[0])
 	filedata = filedata.replace('IWs',IW)
-	filedata = filedata.replace('OUTPUTFILE',outputname)
+	filedata = filedata.replace('OUTPUTFILE',splitslavefolder+'/'+outputname)
        # # Write the file out again
         with open(graph2run, 'w') as file:
            file.write(filedata)
@@ -104,7 +109,7 @@ for acdatefolder in sorted(os.listdir(slavefolder)):
         filedata = filedata.replace('INPUTFILE1', files[0])
 	filedata = filedata.replace('INPUTFILE2', files[1])
 	filedata = filedata.replace('IWs',IW)
-	filedata = filedata.replace('OUTPUTFILE',outputname)
+	filedata = filedata.replace('OUTPUTFILE',splitslavefolder+'/'+outputname)
         # Write the file out again
         with open(graph2run, 'w') as file:
            file.write(filedata)

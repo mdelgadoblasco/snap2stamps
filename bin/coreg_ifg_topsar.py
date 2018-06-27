@@ -76,12 +76,12 @@ if not os.path.exists(logfolder):
 
 outlog=logfolder+'/coreg_ifg_proc_stdout.log'
 
-graphxml=GRAPH+'/coreg_ifg_computation.xml'
+graphxml=GRAPH+'/coreg_ifg_computation_subset.xml'
+print graphxml
 graph2run=GRAPH+'/coreg_ifg2run.xml'
 
 out_file = open(outlog, 'a')
 err_file=out_file
-polygon=''
 
 print bar_message
 out_file.write(bar_message)
@@ -92,13 +92,14 @@ print bar_message
 out_file.write(bar_message)
 k=0
 for dimfile in glob.iglob(slavesplittedfolder + '/*'+IW+'.dim'):
+    print dimfile
     k=k+1
     head, tail = os.path.split(os.path.join(slavesplittedfolder, dimfile))
     message='['+str(k)+'] Processing slave file :'+tail+'\n'
     print message
     out_file.write(message)
-    print tail[0:8]
-    outputname=MASTER[17:8]+'_'+tail[0:8]+'_'+IW+'.dim'
+    head , tailm = os.path.split(MASTER)
+    outputname=tailm[17:25]+'_'+tail[0:8]+'_'+IW+'.dim'
     with open(graphxml, 'r') as file :
        filedata = file.read()
     # Replace the target string
@@ -121,7 +122,7 @@ for dimfile in glob.iglob(slavesplittedfolder + '/*'+IW+'.dim'):
     print('['+str(k)+'] Finished process in '+str(timeDelta)+' seconds.')
     out_file.write('['+str(k)+'] Finished process in '+str(timeDelta)+' seconds.\n')
     if process.returncode != 0 :
-        message='Error splitting slave '+str(files)
+        message='Error computing with coregistration and interferogram generation of splitted slave '+str(files)
         err_file.write(message+'\n')
     else:
         message='Coregistration and Interferogram computation for data '+str(tail)+' successfully completed.\n'
