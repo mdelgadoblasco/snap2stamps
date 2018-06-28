@@ -3,10 +3,10 @@
 # Date: 21/06/2018
 # Version: 1.0
 
-# Step 1 : preparing slaves in folder structure
-# Step 2 : TOPSAR Splitting (Assembling) and Apply Orbit
-# Step 3 : Coregistration and Interferogram generation
-# Step 4 : StaMPS export
+# Step 1 : preparing slaves in folder structure : slaves_prep.py
+# Step 2 : TOPSAR Splitting (Assembling) and Apply Orbit : splitting_slaves.py
+# Step 3 : Coregistration and Interferogram generation : coreg_ifg_topsar.py
+# Step 4 : StaMPS export : stamps_export.py
 
 # Added option for CACHE and CPU specification by user
 # Planned support for DEM selection and ORBIT type selection 
