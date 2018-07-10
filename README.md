@@ -1,5 +1,6 @@
-# snap2stamps
-Using SNAP as InSAR processor for StaMPS
+# snap2stamps       <a href="https://zenodo.org/badge/latestdoi/138557466"><img src="https://zenodo.org/badge/138557466.svg" alt="DOI"></a>
+
+Using SNAP as InSAR processor for StaMPS 
 
 This manual and the included scripts call routines of the ESA SentiNel Application Platform (SNAP) to perform TOPSAR interferometric processing with ingestion in the open source StaMPS package. 
 
