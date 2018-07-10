@@ -1,4 +1,4 @@
-# snap2stamps       <a href="https://zenodo.org/badge/latestdoi/138557466"><img src="https://zenodo.org/badge/138557466.svg" alt="DOI"></a>
+# snap2stamps      <a href="https://doi.org/10.5281/zenodo.1308689"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1308689.svg" alt="DOI"></a>
 
 Using SNAP as InSAR processor for StaMPS 
 
