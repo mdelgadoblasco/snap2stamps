@@ -99,7 +99,7 @@
       <sourceProduct refid="TOPSAR-Deburst(2)"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <file>OUTPUTFOLDERCOREG/mst_Orb_Stack_ESD_Deb_TIME_IWs.dim</file>
+      <file>OUTPUTCOREGFOLDER/OUTPUTFILE</file>
       <formatName>BEAM-DIMAP</formatName>
     </parameters>
   </node>
@@ -110,8 +110,8 @@
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <orbitDegree>3</orbitDegree>
-      <demName>External DEM</demName>
-      <externalDEMFile>/application/pi/Desktop/Processing/Rome/ALOSDEM_ROME_41-43N-12-13E_geotif.tif</externalDEMFile>
+      <demName>SRTM 1Sec HGT</demName>
+      <externalDEMFile/>
       <externalDEMNoDataValue>0.0</externalDEMNoDataValue>
       <tileExtensionPercent>100</tileExtensionPercent>
       <outputTopoPhaseBand>true</outputTopoPhaseBand>
@@ -125,7 +125,7 @@
       <sourceProduct refid="TopoPhaseRemoval"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <file>OUTPUTFOLDERIFG/mst_Orb_Stack_Ifg_Deb_DInSAR_TIME_IWs.dim</file>
+      <file>OUTPUTIFGFOLDER/OUTPUTFILE</file>
       <formatName>BEAM-DIMAP</formatName>
     </parameters>
   </node>
