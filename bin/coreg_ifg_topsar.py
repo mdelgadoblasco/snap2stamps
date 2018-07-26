@@ -91,7 +91,7 @@ out_file.write(message)
 print bar_message 
 out_file.write(bar_message)
 k=0
-for dimfile in glob.iglob(slavesplittedfolder + '/*'+IW+'.dim'):
+for dimfile in glob.iglob(slavesplittedfolder + '/*/*'+IW+'.dim'):
     print dimfile
     k=k+1
     head, tail = os.path.split(os.path.join(slavesplittedfolder, dimfile))
@@ -122,7 +122,7 @@ for dimfile in glob.iglob(slavesplittedfolder + '/*'+IW+'.dim'):
     print('['+str(k)+'] Finished process in '+str(timeDelta)+' seconds.')
     out_file.write('['+str(k)+'] Finished process in '+str(timeDelta)+' seconds.\n')
     if process.returncode != 0 :
-        message='Error computing with coregistration and interferogram generation of splitted slave '+str(files)
+        message='Error computing with coregistration and interferogram generation of splitted slave '+str(dimfile)
         err_file.write(message+'\n')
     else:
         message='Coregistration and Interferogram computation for data '+str(tail)+' successfully completed.\n'
