@@ -32,6 +32,9 @@ try:
                 if "IW1" in line:
                         IW = line.split('=')[1].strip()
                         print IW
+		if "MASTER" in line:
+			MASTER = line.split('=')[1].strip()
+			print MASTER
                 if "GRAPHSFOLDER" in line:
                         GRAPH = line.split('=')[1].strip()
                         print GRAPH
@@ -50,7 +53,8 @@ finally:
 ###################################################################################
 coregfolder=PROJECT+'/coreg'
 ifgfolder=PROJECT+'/ifg'
-outputexportfolder=PROJECT+'/export-PSI'
+head, tail = os.path.split(MASTER)
+outputexportfolder=PROJECT+'/INSAR_'+tail[17:25]
 logfolder=PROJECT+'/logs'
 
 if not os.path.exists(outputexportfolder):
