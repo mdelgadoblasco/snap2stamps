@@ -1,7 +1,7 @@
 There is already a list of identified future updates.
 Community contributions are welcomed.
 
-1) Add more sensor support. Specifically on STRIMAP SAR datasets
+1) Add more sensor support. Specifically on STRIPMAP SAR datasets
 
 2) External DEM support configurable via python scripts. Already possible modifying provided graphs directly.
 
