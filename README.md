@@ -1,4 +1,4 @@
-# snap2stamps     <a href="https://doi.org/10.5281/zenodo.1308687"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1308687.svg" alt="DOI"></a>  ![](https://estruyf-github.azurewebsites.net/api/VisitorHit?user=mdelgadoblascof&repo=snap2stamps&countColorcountColor&countColor=%237B1E7A)
+# snap2stamps     <a href="https://doi.org/10.5281/zenodo.1308687"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1308687.svg" alt="DOI"></a> 
 
 
 Using SNAP as InSAR processor for StaMPS 
@@ -8,7 +8,7 @@ This manual and the included scripts call routines of the ESA SentiNel Applicati
 The provided scripts with this SNAP to StaMPS manual are not part of the SNAP software. SNAP therefore needs to be installed independently (version 6.0 or higher).
 The provided scripts are open-source contributions and should not be mistaken for official Applications within SNAP. The scripts are provided to you "as is" with no warranties of corrections. Use at your own risk.
 
-This provided package evolved from inital bash script routines used for the publication "ESA SNAP – StaMPS integrated processing for Sentinel-1 Persistent Scatterer Interferometry" presented at IGARSS 2018 in Valencia in collaboration with UJA, BRGM, ESA, Progressive Systems and ARRAY
+This provided package evolved from inital bash script routines used for the publication "ESA SNAP – StaMPS integrated processing for Sentinel-1 Persistent Scatterer Interferometry" presented at IGARSS 2018 in Valencia in collaboration with UJAEN, BRGM, ESA, Progressive Systems and ARRAY
 
 This work was done with the collaboration of Prof Andrew Hooper for ensuring the SNAP StaMPS compatibility.
 
