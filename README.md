@@ -1,4 +1,5 @@
-# snap2stamps     <a href="https://doi.org/10.5281/zenodo.1308687"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1308687.svg" alt="DOI"></a> 
+# snap2stamps     <a href="https://doi.org/10.5281/zenodo.1308687"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1308687.svg" alt="DOI"></a>  ![](https://estruyf-github.azurewebsites.net/api/VisitorHit?user=mdelgadoblascof&repo=snap2stamps&countColorcountColor&countColor=%237B1E7A)
+
 
 Using SNAP as InSAR processor for StaMPS 
 
