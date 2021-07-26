@@ -46,8 +46,7 @@
       <xCorrThreshold>0.1</xCorrThreshold>
       <cohThreshold>0.15</cohThreshold>
       <numBlocksPerOverlap>10</numBlocksPerOverlap>
-      <useSuppliedRangeShift>false</useSuppliedRangeShift>
-      <useSuppliedAzimuthShift>false</useSuppliedAzimuthShift>
+      <useSuppliedShifts>false</useSuppliedShifts>
       <overallAzimuthShift>0.0</overallAzimuthShift>
       <overallRangeShift>0.0</overallRangeShift>
     </parameters>
@@ -97,7 +96,7 @@
   <node id="Write(2)">
     <operator>Write</operator>
     <sources>
-      <sourceProduct refid="TOPSAR-Deburst(2)"/>
+      <sourceProduct refid="Subset(2)"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <file>OUTPUTCOREGFOLDER/OUTPUTFILE</file>
@@ -120,10 +119,42 @@
       <outputLatLonBands>true</outputLatLonBands>
     </parameters>
   </node>
+  <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="TopoPhaseRemoval"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands/>
+      <region>0,0,24608,2844</region>
+      <geoRegion>POLYGON</geoRegion>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <tiePointGridNames/>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+  <node id="Subset(2)">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="TOPSAR-Deburst(2)"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands/>
+      <region>0,0,24608,2844</region>
+      <geoRegion>POLYGON</geoRegion>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <tiePointGridNames/>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
   <node id="Write">
     <operator>Write</operator>
     <sources>
-      <sourceProduct refid="TopoPhaseRemoval"/>
+      <sourceProduct refid="Subset"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <file>OUTPUTIFGFOLDER/OUTPUTFILE</file>
@@ -159,8 +190,14 @@
     <node id="TopoPhaseRemoval">
       <displayPosition x="694.0" y="129.0"/>
     </node>
+    <node id="Subset">
+      <displayPosition x="874.0" y="135.0"/>
+    </node>
+    <node id="Subset(2)">
+      <displayPosition x="630.0" y="213.0"/>
+    </node>
     <node id="Write">
-      <displayPosition x="891.0" y="127.0"/>
+      <displayPosition x="1036.0" y="128.0"/>
     </node>
   </applicationData>
 </graph>

@@ -46,7 +46,8 @@
       <xCorrThreshold>0.1</xCorrThreshold>
       <cohThreshold>0.15</cohThreshold>
       <numBlocksPerOverlap>10</numBlocksPerOverlap>
-      <useSuppliedShifts>false</useSuppliedShifts>
+      <useSuppliedRangeShift>false</useSuppliedRangeShift>
+      <useSuppliedAzimuthShift>false</useSuppliedAzimuthShift>
       <overallAzimuthShift>0.0</overallAzimuthShift>
       <overallRangeShift>0.0</overallRangeShift>
     </parameters>
