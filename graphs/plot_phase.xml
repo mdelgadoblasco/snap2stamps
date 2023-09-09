@@ -1,0 +1,69 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>INPUTFILE</file>
+    </parameters>
+  </node>
+  <node id="BandMaths">
+    <operator>BandMaths</operator>
+    <sources>
+      <sourceProduct refid="Multilook"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <targetBands>
+        <targetBand>
+          <name>phase</name>
+          <type>float32</type>
+          <expression>phase(QBAND,IBAND)</expression>
+          <description/>
+          <unit/>
+          <noDataValue>0.0</noDataValue>
+        </targetBand>
+      </targetBands>
+      <variables/>
+    </parameters>
+   </node>
+  <node id="Multilook">
+      <operator>Multilook</operator>
+      <sources>
+        <sourceProduct refid="Read"/>
+      </sources>
+      <parameters>
+        <sourceBands/>
+        <nRgLooks>20</nRgLooks>
+        <nAzLooks>5</nAzLooks>
+        <outputIntensity>false</outputIntensity>
+        <grSquarePixel>true</grSquarePixel>
+      </parameters>
+    </node>
+    <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="BandMaths"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands>phase</sourceBands>
+      <region>0,0,24608,2844</region>
+      <geoRegion/>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <tiePointGridNames/>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+    <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Subset"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>OUTPUTFOLDER/OUTPUTNAME.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+</graph>
+

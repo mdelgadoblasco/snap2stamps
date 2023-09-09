@@ -1,0 +1,53 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>INPUTFILE</file>
+    </parameters>
+  </node>
+  <node id="BandMaths">
+    <operator>BandMaths</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <targetBands>
+        <targetBand>
+          <name>amp</name>
+          <type>float32</type>
+          <expression>20*log10(abs(QBAND+IBAND))</expression>
+          <description/>
+          <unit/>
+          <noDataValue>0.0</noDataValue>
+        </targetBand>
+      </targetBands>
+      <variables/>
+    </parameters>
+   </node>
+  <node id="Multilook">
+      <operator>Multilook</operator>
+      <sources>
+        <sourceProduct refid="BandMaths"/>
+      </sources>
+      <parameters>
+        <sourceBands>amp</sourceBands>
+        <nRgLooks>3</nRgLooks>
+        <nAzLooks>1</nAzLooks>
+        <outputIntensity>false</outputIntensity>
+        <grSquarePixel>true</grSquarePixel>
+      </parameters>
+    </node>
+    <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Multilook"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>OUTPUTFOLDER/OUTPUTNAME.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+</graph>
+

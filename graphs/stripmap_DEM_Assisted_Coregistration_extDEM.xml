@@ -1,0 +1,48 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="DEM-Assisted-Coregistration">
+    <operator>DEM-Assisted-Coregistration</operator>
+    <sources>
+      <sourceProduct.2 refid="ProductSet-Reader"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <demName>External DEM</demName>
+      <demResamplingMethod>BILINEAR_INTERPOLATION</demResamplingMethod>
+      <externalDEMFile>EXTERNALDEM</externalDEMFile>
+      <externalDEMNoDataValue>0.0</externalDEMNoDataValue>
+      <resamplingType>BILINEAR_INTERPOLATION</resamplingType>
+      <tileExtensionPercent>100</tileExtensionPercent>
+      <maskOutAreaWithoutElevation>true</maskOutAreaWithoutElevation>
+      <outputRangeAzimuthOffset>false</outputRangeAzimuthOffset>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="DEM-Assisted-Coregistration"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>OUTPUTCOREGFOLDER/OUTPUTFILE</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <node id="ProductSet-Reader">
+    <operator>ProductSet-Reader</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <fileList>MASTER,SECONDARY</fileList>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="DEM-Assisted-Coregistration">
+      <displayPosition x="21.0" y="112.0"/>
+    </node>
+    <node id="Write">
+      <displayPosition x="220.0" y="112.0"/>
+    </node>
+    <node id="ProductSet-Reader">
+      <displayPosition x="49.0" y="36.0"/>
+    </node>
+  </applicationData>
+</graph>

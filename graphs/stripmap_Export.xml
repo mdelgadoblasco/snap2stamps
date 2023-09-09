@@ -1,0 +1,40 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="StampsExport">
+    <operator>StampsExport</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+      <sourceProduct.1 refid="Read(2)"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <targetFolder>OUTPUTFOLDER</targetFolder>
+      <psiFormat>true</psiFormat>
+    </parameters>
+  </node>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>COREGFILE</file>
+    </parameters>
+  </node>
+  <node id="Read(2)">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>IFGFILE</file>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="StampsExport">
+      <displayPosition x="161.0" y="215.0"/>
+    </node>
+    <node id="Read">
+      <displayPosition x="20.0" y="196.0"/>
+    </node>
+    <node id="Read(2)">
+      <displayPosition x="29.0" y="237.0"/>
+    </node>
+  </applicationData>
+</graph>
