@@ -123,7 +123,7 @@ CACHE = 16G
 sudo apt update
 sudo apt install git libfftw3 libgfortran
 git clone https://github.com/mdelgadoblasco/snap2stamps.git 
-conda env create -f SNAP2stamps_environment.yml
+conda env create -f snap2stamps_environment.yml
 ```
 
 ### 1.3. Usage
