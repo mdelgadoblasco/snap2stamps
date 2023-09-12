@@ -18,7 +18,7 @@ Authors:
 ## Description
 SNAP2StaMPS version 2 tries to collect feedback and it has been built to minimize issues from the user side due to package installation, or other dependencies due to software versioning, etc. Further, the new version supports the preprocessing of high-resolution TerraSAR-/TanDEM-X Stripmap data including and enhancing the TSX2Stamps package for the preparation of StaMPS PSI processing. TSX2Stamps uses a similar workflow applied to Sentinel-1 TOPSAR data in the previous version of SNAP2StaMPS. The TSX2Stamps package is also freely available for download on GitHub (https://github.com/jziemer1996/TSX2StaMPS). Please find below the general workflow of SNAP2StaMPS v2. For further information, please check the information given below or have a look at the tutorial provided within this repository.
 
-![SNAP2StaMPS_v2_workflow](https://github.com/mdelgadoblasco/snap2stamps_v2/assets/20595425/6ab8fa42-7941-4b85-a8c6-d2e73df37aae)
+![Snap2stamps_v2_workflow](https://github.com/mdelgadoblasco/snap2stamps/assets/56928368/04612220-b580-44ac-a2b3-e51d2c364bc4)
 
 ## Important notes:
 ### SNAP2StaMPS execution
