@@ -150,14 +150,14 @@ python topsar_step_5_stamps_export_multiIW.py -F project.conf
 ```
   - TerraSAR-X Stripmap processing:
 ```bash
-python stripmap_tsx_step_0a_unpack_sar_scenes.py -F project.conf
-python stripmap_tsx_step_0b_secondaries_prep.py -F project.conf
-python stripmap_tsx_step_1_subset_sar.py -F project.conf
+python stripmap_step_0a_unpack_sar_scenes.py -F project.conf
+python stripmap_step_0b_secondaries_prep.py -F project.conf
+python stripmap_step_1_subset_sar.py -F project.conf
 python stripmap_step_1b_masterselection.py -F project.conf
-python stripmap_tsx_step_2_coreg_sar.py -F project.conf
-python stripmap_tsx_step_3_ifg_sar.py -F project.conf
-python stripmap_tsx_step_4_plotting_all.py -F project.conf        #[optional]
-python stripmap_tsx_step_5_stamps_export.py -F project.conf
+python stripmap_step_2_coreg_sar.py -F project.conf
+python stripmap_step_3_ifg_sar.py -F project.conf
+python stripmap_step_4_plotting_all.py -F project.conf        #[optional]
+python stripmap_step_5_stamps_export.py -F project.conf
 ```
 A new feature of this release is the plotting of the images resulting from subsetting, coregistration, and interferogram generation. To generate the plots run the following code by specifying the desired mode:
 - for splitted or subsetted files:
