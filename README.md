@@ -121,8 +121,8 @@ CACHE = 16G
 ### 1.2. Installation
 ```bash
 sudo apt update
-sudo apt install git libfftw3 libgfortran   **(Ubuntu 20.04)**
-sudo apt install fftw-dev gfortran          **(Ubuntu 22.04)**
+sudo apt install git libfftw3 libgfortran   #(Ubuntu 20.04)
+sudo apt install fftw-dev gfortran          #(Ubuntu 22.04)
 git clone https://github.com/mdelgadoblasco/snap2stamps.git 
 conda env create -f snap2stamps_environment.yml
 ```
