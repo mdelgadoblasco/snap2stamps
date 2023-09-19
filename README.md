@@ -7,7 +7,7 @@ This repository and the included scripts call routines of the ESA SentiNel Appli
 
 ***The provided scripts with this SNAP to StaMPS package are not part of the SNAP software. The provided scripts are open-source contributions and should not be mistaken for official Applications within SNAP. The scripts are provided to you "as is" with no warranties of corrections.***
 
-This new provided package (SNAP2StaMPSv2) evolves from the initial SNAP2StaMPS package and was presented at FRINGE WORKSHOP 2023 in Leeds, September 2023 with zenodo doi [10.5281/zenodo.8331352](https://doi.org/10.5281/zenodo.8359769).
+This new provided package (SNAP2StaMPSv2) evolves from the initial SNAP2StaMPS package and was presented at FRINGE WORKSHOP 2023 in Leeds, September 2023 with zenodo doi [10.5281/zenodo.8359769](https://doi.org/10.5281/zenodo.8359769).
 
 Authors: 
 - José Manuel Delgado Blasco, "Microgeodesia Jaén" Research Group (MJaén), Jaén, Spain
