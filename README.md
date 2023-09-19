@@ -1,4 +1,4 @@
-# SNAP2StaMPS v2    <a href="https://doi.org/10.5281/zenodo.8331352"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.8331352.svg" alt="DOI"></a> [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![Github All Releases](https://img.shields.io/github/downloads/mdelgadoblasco/snap2stamps/total.svg)](https://GitHub.com/mdelgadoblasco/snap2stamps/releases/)
+# SNAP2StaMPS v2    <a href="https://doi.org/10.5281/zenodo.8331352"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.8359769.svg" alt="DOI"></a> [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![Github All Releases](https://img.shields.io/github/downloads/mdelgadoblasco/snap2stamps/total.svg)](https://GitHub.com/mdelgadoblasco/snap2stamps/releases/)
 SNAP2StaMPS v2: Using SNAP as InSAR processor for StaMPS
 
 **(Updated on 2023/09/19)**
@@ -7,7 +7,7 @@ This repository and the included scripts call routines of the ESA SentiNel Appli
 
 ***The provided scripts with this SNAP to StaMPS package are not part of the SNAP software. The provided scripts are open-source contributions and should not be mistaken for official Applications within SNAP. The scripts are provided to you "as is" with no warranties of corrections.***
 
-This new provided package (SNAP2StaMPSv2) evolves from the initial SNAP2StaMPS package and was presented at FRINGE WORKSHOP 2023 in Leeds, September 2023 with zenodo doi [10.5281/zenodo.8331352](https://doi.org/10.5281/zenodo.8331352).
+This new provided package (SNAP2StaMPSv2) evolves from the initial SNAP2StaMPS package and was presented at FRINGE WORKSHOP 2023 in Leeds, September 2023 with zenodo doi [10.5281/zenodo.8331352](https://doi.org/10.5281/zenodo.8359769).
 
 Authors: 
 - José Manuel Delgado Blasco, "Microgeodesia Jaén" Research Group (MJaén), Jaén, Spain
