@@ -12,7 +12,6 @@ dependencies:
   - blas=1.0
   - bzip2=1.0.8
   - ca-certificates=2023.05.30
-  - fftw3
   - geos=3.8.0
   - intel-openmp=2023.1.0
   - ld_impl_linux-64=2.38
