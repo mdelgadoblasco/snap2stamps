@@ -68,7 +68,7 @@
   <node id="TOPSAR-Deburst(2)">
     <operator>TOPSAR-Deburst</operator>
     <sources>
-       <sourceProduct refid="Back-Geocoding">
+       <sourceProduct refid="Back-Geocoding"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <selectedPolarisations/>
