@@ -32,7 +32,7 @@
       <disableReramp>false</disableReramp>
     </parameters>
   </node>
-  <node id="Enhanced-Spectral-Diversity">
+   <node id="Enhanced-Spectral-Diversity">
     <operator>Enhanced-Spectral-Diversity</operator>
     <sources>
       <sourceProduct refid="Back-Geocoding"/>
@@ -46,11 +46,12 @@
       <xCorrThreshold>0.1</xCorrThreshold>
       <cohThreshold>0.15</cohThreshold>
       <numBlocksPerOverlap>10</numBlocksPerOverlap>
-      <useSuppliedShifts>false</useSuppliedShifts>
-      <overallAzimuthShift>0.0</overallAzimuthShift>
+      <useSuppliedRangeShift>false</useSuppliedRangeShift>
       <overallRangeShift>0.0</overallRangeShift>
+      <useSuppliedAzimuthShift>false</useSuppliedAzimuthShift>
+      <overallAzimuthShift>0.0</overallAzimuthShift>
     </parameters>
-  </node>
+ </node>
   <node id="Interferogram">
     <operator>Interferogram</operator>
     <sources>
