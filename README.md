@@ -142,7 +142,7 @@ By running the above script the workflow may include the Sentinel-1 data downloa
 ```bash
 python asf_s1_downloader.py -F project.conf                       #[optional]
 python topsar_step_0_secondaries_prep.py -F project.conf
-python automaster.py -F project.conf                              #[optional]
+python topsar_automaster.py -F project.conf -M AUTO                             #[optional]
 python topsar_step_1_splitting_master_multi_IW.py -F project.conf
 python topsar_step_2_splitting_secondaries.py -F project.conf
 python topsar_step_3_coreg_ifg_topsar_smart.py -F project.conf
