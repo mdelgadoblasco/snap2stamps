@@ -26,7 +26,7 @@
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <orbitDegree>3</orbitDegree>
       <demName>External DEM</demName>
-      <externalDEMFile>EXTERNALDEM<externalDEMFile>
+      <externalDEMFile>EXTERNALDEM</externalDEMFile>
       <externalDEMNoDataValue>0.0</externalDEMNoDataValue>
       <tileExtensionPercent>100</tileExtensionPercent>
       <outputTopoPhaseBand>true</outputTopoPhaseBand>
