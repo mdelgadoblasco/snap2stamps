@@ -18,6 +18,8 @@ Authors:
 ## Description
 SNAP2StaMPS version 2 tries to collect feedback and it has been built to minimize issues from the user side due to package installation, or other dependencies due to software versioning, etc. Further, the new version supports the preprocessing of high-resolution TerraSAR-/TanDEM-X Stripmap data including and enhancing the TSX2Stamps package for the preparation of StaMPS PSI processing. TSX2Stamps uses a similar workflow as applied to Sentinel-1 TOPSAR data in the previous version of SNAP2StaMPS. The TSX2Stamps package is also freely available as standalone package for download on GitHub (https://github.com/jziemer1996/TSX2StaMPS). Please find below the general workflow of SNAP2StaMPS v2. For further information, please check the information given below or have a look at the tutorial provided within this repository.
 
+As an add-on, a novel amplitude-based Spatially Variant Apodization (SVA) approach was developed in 2025, which effectively reduces sidelobes in SAR data while fully preserving the interferometric phase, making it ideal for accurate deformation monitoring in the SNAP2StaMPS workflow. This package is not yet included in the SNAP2StaMPSv2 workflow, but it is available as a standalone package on GitHub: https://github.com/natasnat/SVA-with-snappy. We are considering implementing this functionality as part of the SNAP2StaMPS workflow in the future. 
+
 ![Snap2stamps_v2_workflow](https://github.com/mdelgadoblasco/snap2stamps/assets/56928368/04612220-b580-44ac-a2b3-e51d2c364bc4)
 
 ## Important notes:
@@ -201,6 +203,8 @@ We want to acknowledge:
 - Fabio Cian
 - Andreas Braun
 - Andre Theron
+- Natascha Liedel
+
 ## Questions and inquiries 
 For questions and inquiries, we want to promote the usage of the [ESA STEP Forum](https://forum.step.esa.int/) that has been used very much until now.
 
