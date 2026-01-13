@@ -11,9 +11,9 @@ This new provided package (SNAP2StaMPSv2) evolves from the initial SNAP2StaMPS p
 
 Authors: 
 - José Manuel Delgado Blasco, "Microgeodesia Jaén" Research Group (MJaén), Jaén, Spain
-- Jonas Ziemer, Department for Earth Observation, Friedrich Schiller University Jena (FSU), Germany
+- Jonas Ziemer, Department for Earth Observation, Friedrich Schiller University (FSU), Jena, Germany
 - Michael Foumelis, Aristotle University of Thessaloniki (AUTh), Greece
-- Clémence Dubois, Department for Earth Observation, Friedrich Schiller University Jena (FSU), Germany
+- Clémence Dubois, Institute for Data Science, German Aerospace Center (DLR), Jena, Germany
 
 ## Description
 SNAP2StaMPS version 2 tries to collect feedback and it has been built to minimize issues from the user side due to package installation, or other dependencies due to software versioning, etc. Further, the new version supports the preprocessing of high-resolution TerraSAR-/TanDEM-X Stripmap data including and enhancing the TSX2Stamps package for the preparation of StaMPS PSI processing. TSX2Stamps uses a similar workflow as applied to Sentinel-1 TOPSAR data in the previous version of SNAP2StaMPS. The TSX2Stamps package is also freely available as standalone package for download on GitHub (https://github.com/jziemer1996/TSX2StaMPS). Please find below the general workflow of SNAP2StaMPS v2. For further information, please check the information given below or have a look at the tutorial provided within this repository.
